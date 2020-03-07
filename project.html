@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<a href="index.html"><button>Go back</button></a>
+<h1 style="text-align: center;">Project Name</h1>
+<h2 style="text-align: center;">Tasks</h2>
+<ol type="1" style="text-align: center;">
+    <li>Task 1</a></li>
+    <li>Task 2</a></li>
+    <li>Task 3</a></li>
+    <li>Task 4</a></li>
+    <li>Task 5</a></li>
+</ol>
+<div class="alan-btn"></div>
+<body>
+    <script type="text/javascript" 
+    src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+    <script>
+        var alanBtnInstance = alanBtn({
+          key: "",
+          onCommand: function (commandData) {
+            if (commandData.command === "go:back") {
+              //call client code that will react on the received command
+            }
+          },
+          rootEl: document.getElementById("alan-btn"),
+        });
+      </script>
+</body>
+</html>
