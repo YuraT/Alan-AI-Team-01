@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h2 style="text-align: center;">Projects</h2>
+<ul style="text-align: center;">
+    <li><a href="project.html">Project 1</a></li>
+    <li><a href="project.html">Project 2</a></li>
+    <li><a href="project.html">Project 3</a></li>
+    <li><a href="project.html">Project 4</a></li>
+    <li><a href="project.html">Project 5</a></li>
+</ul>
+<div class="alan-btn"></div>
+<body>
+    <script type="text/javascript" 
+    src="https://studio.alan.app/web/lib/alan_lib.js"></script>
+    <script>
+        var alanBtnInstance = alanBtn({
+          key: "",
+          onCommand: function (commandData) {
+            if (commandData.command === "go:back") {
+              //call client code that will react on the received command
+            }
+          },
+          rootEl: document.getElementById("alan-btn"),
+        });
+      </script>
+</body>
+</html>
